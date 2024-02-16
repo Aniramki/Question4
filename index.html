@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un petit formulaire</title>
+    
+</head>
+
+<body>
+    <h1>Un petit formulaire (pour commencer)</h1>
+
+    <form id="login" action="../Question4/loginctrl.php" method="get">
+        Merci de renseigner les informations suivantes :
+        <table width=70%>
+            <tbody>
+
+                <tr>
+                    <td>Votre nom :</td>
+                    <td><input type="text" id="nom" name="nom" /></td>
+                </tr>
+                <tr>
+                    <td>Votre age</td>
+                    <td> <input type="number" id="age" name="age" </td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            Votre situation maritale :
+
+            <input type="radio" id="marie" name="marit" value="marié" checked />
+            <label for="marie">Marié</label>
+
+            <input type="radio" id="veuf" name="marit" value="veuf(ve)" />
+            <label for="veuf">Veuf(ve)</label>
+
+            <input type="radio" id="celib" name="marit" value="celibataire">
+            <label for="celib">Célibataire</label>
+        </div>
+
+        <div>
+            Vos centres d'intéret :
+            <input type="checkbox" id="internet" name="internet" value="Internet" />
+            <label for="internet">Internet</label>
+
+            <input type="checkbox" id="micro" name="micro" value="la micro-informatique" />
+            <label for="micro">Micro-informatique</label>
+
+            <input type="checkbox" id="jeux" name="jeux" value="les jeux Vidéo" />
+            <label for="jeux">Jeux Vidéo</label>
+        </div>
+        <div>
+            <button type="reset">Recommencer</button> <button type="submit">Envoyer</button>
+        </div>
+    </form>
+</body>
+
+</html>
